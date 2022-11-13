@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(45deg, rgb(120, 150, 108), rgb(150, 213, 201));
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.pinguin{
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+.pinguin *{
+    position: absolute;
+}
+
+/* NON */
+.non{
+    width: 90%;
+    height: 60%;
+    background-color: #ec81b4;
+    border-radius: 45%;
+    top: -2%;
+    left: 5%;
+}
+.phone{
+    background-color: #ec81b4;
+    height: 26%;
+    width: 11%;
+    border-radius: 50%;
+    z-index: 3;
+}
+.phone.left{
+    left: -6%;
+    top: 37%;
+}
+.phone.right{
+    right: -6%;
+    top: 37%;
+}
+.phone1{
+    background-color: #f3bdd8;
+    width: 11%;
+    height: 20%;
+    border-radius: 50%;
+    z-index: 3;
+}
+.phone1.left{
+    top: 40%;
+    left: -9%;
+}
+.phone1.right{
+    top: 40%;
+    right: -9%;
+}
+/* HEAD */
+.head{
+    width: 90%;
+    height: 60%;
+    background: linear-gradient(45deg, #696b6d, #3d3e40);
+    border-radius: 70% 70% 60% 60%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    z-index: 2;
+}
+.face{
+    width: 65%;
+    height: 60%;
+    background-color: white;
+    border-radius: 60% 60% 60% 60%;
+    transform: rotate(90deg);
+}
+.face.left{
+    left: 0;
+    top: 29%;
+}
+.face.right {
+    right: 0;
+    top: 29%;
+}
+.chin{
+    width: 68%;
+    height: 50%;
+    background-color: white;
+    top: 48%;
+    left: 15%;
+    border-radius: 80% 80% 50% 55%;
+}
+.eye{
+    width: 15%;
+    height: 15%;
+    background-color: #3d3e40;
+    border-radius: 50%;
+}
+.eye.left{
+    top: 50%;
+    left: 15%;
+}
+.eye.right{
+    top: 50%;
+    right: 15%;
+}
+.blush1{
+    width: 4%;
+    height: 4%;
+    background-color: white;
+    border-radius: 50%;
+}
+.blush1.left {
+    top: 54%;
+    left: 18%;
+}
+.blush1.right {
+    top: 54%;
+    right: 18%;
+}
+.blush2{
+    width: 3%;
+    height: 3%;
+    background-color: white;
+    border-radius: 50%;
+}
+.blush2.left {
+    top: 54%;
+    right: 23%;
+}
+.blush2.right {
+    top: 54%;
+    left: 23%;
+}
+.mounth{
+    width: 28%;
+    height: 20%;
+    background-color: #f6e38b;
+    border-radius: 50% 50% 55% 55%;
+    top: 60%;
+    left: 35%;
+}
+.mahong{
+    width: 8%;
+    height: 8%;
+    background-color: pink;
+    border-radius: 50%;
+    filter: blur(5px);
+}
+.mahong.left{
+    top: 75%;
+    left: 16%;
+}
+.mahong.right{
+    top: 75%;
+    right: 16%;
+}
+/* BODY */
+.body{
+    width: 58%;
+    height: 45%;
+    background: linear-gradient(45deg, #696b6d, #3d3e40);
+    border-radius: 80% 80% 70% 70%;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    z-index: 1;
+}
+.shirt{
+    width: 55%;
+    height: 60%;
+    background: white;
+    top: 10%;
+    left: 23%;
+    border-radius: 100% 100% 75% 75%;
+}
+.arm{
+    width: 27%;
+    height: 8%;
+    background: linear-gradient(45deg, #696b6d, #3d3e40);
+    transform: rotate(-45deg) scale(1.5);
+    border-radius: 75% 50% 50% 75%;
+    z-index: -1;
+}
+.arm.left{
+    top: 65%;
+    left: 5%;
+    animation: 3s hello infinite linear;
+}
+.arm.right{
+    top: 65%;
+    right: 5%;
+    transform: rotate(-137deg) scale(1.5);
+}
+.foot{
+    background: linear-gradient(45deg, #fc9e2d, #db8d31);
+    width: 25%;
+    height: 13%;
+    border-radius: 90% 100% 100% 90%;
+}
+.foot.left{
+    top: 86%;
+    left: 6%;
+    transform: rotate(12deg) scale(1.5);
+}
+.foot.right{
+    top: 86%;
+    right: 6%;
+    transform: rotate(-12deg) scale(1.5);
+}
+
+@keyframes hello {
+    0%{
+        transform: rotate(-45deg) scale(1.5);
+    }
+    50%{
+        transform: rotate(33deg) scale(1.5) translate(-19%, -70%);
+    }
+}
